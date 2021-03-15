@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Markdown Reference</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize-skeleton.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+
+<body>
+
+    <div class="container">
+        
+        <div class="twelve columns">
+            <p><b>Markdown</b> é uma maneira simples de formatar texto que fica bem em qualquer dispositivo. Ela não faz nada sofisticado, como alterar o tamanho, cor ou tipo da fonte &mdash; apenas o essencial, usando símbolos de teclado que você já conhece.</p>
+        </div>
+
+        <div class="twelve columns center">
+            <a class="button button-primary" href="tutorial/" style="padding: 0 15px">Experimente nosso Tutorial de 10 minutos</a>
+        </div>
+
+        <div class="twelve columns center">
+
+            <table class="markdown-reference">
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th class="second-example">Or</th>
+                        <th>&hellip; to Get</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>                        
+                        <td class="preformatted">*Italico*</td>
+                        <td class="preformatted second-example">_Italico_</td>
+                        <td><em>Italic</em></td>
+                    </tr>
+                    <tr>                        
+                        <td class="preformatted">**Negrito**</td>
+                        <td class="preformatted second-example">__Negrito__</td>
+                        <td><strong>Negrito</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="preformatted">
+                            # Título nível 1
+                        </td>
+                        <td class="preformatted second-example">
+                            Título nível 1<br/>
+                            ==============
+                        </td>
+                        <td>
+                            <h1 class="smaller-h1">Título nível 1</h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="preformatted">
+                            ## Título nível 2
+                        </td>
+                        <td class="preformatted second-example">
+                            Título nível 2<br/>
+                            --------------
+                        </td>
+                        <td>
+                            <h2 class="smaller-h2">Título nível 2</h2>
+                        </td>
+                    </tr>
+                    <tr>                        
+                        <td class="preformatted">
+                            [Link](http://a.com)
+                        </td>
+                        <td class="preformatted second-example">
+                            [Link][1]<br/>
+                            &#8942;<br/>
+                            [1]: http://b.org
+                        </td>
+                        <td><a href="https://commonmark.org/">Link</a></td>
+                    </tr>
+                    <tr>
+                        <td class="preformatted">
+                            ![Image](http://url/a.png)
+                        </td>
+                        <td class="preformatted second-example">
+                            ![Image][1]<br/>
+                            &#8942;<br/>
+                            [1]: http://url/b.jpg
+                        </td>
+                        <td>
+                            <img src="images/favicon.png" width="36" height="36" alt="Markdown"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="preformatted">
+                            &gt; Bloco de citação
+                        </td>
+                        <td class="preformatted second-example">
+                            &nbsp;
+                        </td>
+                        <td>
+                            <blockquote>Bloco de citação</blockquote>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="preformatted">
+                            <p>
+                                * Lista<br/>
+                                * Lista<br/>
+                                * Lista
+                            </p>
+                        </td>
+                        <td class="preformatted second-example">
+                            <p>
+                                - Lista<br/>
+                                - Lista<br/>
+                                - Lista<br/>
+                            </p>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Lista</li>
+                                <li>Lista</li>
+                                <li>Lista</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="preformatted">
+                            <p>
+                                1. Um<br/>
+                                2. Dois<br/>
+                                3. Três
+                            </p>
+                        </td>
+                        <td class="preformatted second-example">
+                            <p>
+                                1) Um<br/>
+                                2) Dois<br/>
+                                3) Três
+                            </p>
+                        </td>
+                        <td>
+                            <ol>
+                                <li>Um</li>
+                                <li>Dois</li>
+                                <li>Três</li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="preformatted">
+                            Bigode (régua horizontal):<br/>
+                            <br/>
+                            ---
+                        </td>
+                        <td class="preformatted second-example">
+                            Bigode (régua horizontal):<br/>
+                            <br/>
+                            ***
+                        </td>
+                        <td>
+                            Bigode (régua horizontal):
+                            <hr class="custom-hr" />
+                        </td>
+                    </tr>
+                    <tr>                        
+                        <td class="preformatted">
+                            `Código embutido` com crases
+                            </td>
+                        <td class="preformatted second-example">
+                            &nbsp;
+                        </td>
+                        <td>
+                            <code class="preformatted">Código embutido</code> com crases
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="preformatted">
+                            ```<br/>
+                            # bloco de código<br/>
+                            print '3 crases ou'<br/> 
+                            print 'indentado 4 espaços'<br/>                            
+                            ```
+                        </td>
+                        <td class="preformatted second-example">
+                            <span class="spaces">····</span># bloco de código<br/> 
+                            <span class="spaces">····</span>print '3 crases ou'<br/>
+                            <span class="spaces">····</span>print 'indentado 4 espaços'
+                        </td>
+                        <td>
+                            <div class="code-block">
+                                # bloco de código
+                                <br/> print '3 crases ou'
+                                <br/> print 'indentado 4 espaços'
+                            </div>
+                        </td>
+                    </tr>                    
+                </tbody>
+            </table>
+        </div>
+                
+        <div class="twelve columns" style="margin-top: 2%">
+            <p><b>Quer experimentar a Markdown?</b></p>
+            <p>Teste o nosso <b><a href="tutorial/">tutorial interativo de 10 minutos</a></b>, ou <a href="https://spec.commonmark.org/dingus/">divirta-se com a implementação de referência do CommonMark</a>.</p>
+        </div>
+
+        <div class="twelve columns">
+            <p><b>Necessita de mais detalhes?</b></p>
+            <p>Consulte a <a href="https://spec.commonmark.org">especificação oficial do CommonMark</a>, ou <a href="https://talk.commonmark.org">discuta o CommonMark conosco</a>.</p>
+      </div>
+
+    </div>
+
+</body>
+
+</html>
